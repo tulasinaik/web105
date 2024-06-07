@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/jquery-ean13/dist/jquery-ean13.js"></script>
+    <script>
+        $(
+            () =>{
+                $("#codes").EAN13("910001546789");
+            }
+        )
+    </script>
+</head>
+<body>
+   <div style="width: 300px;">
+    <img src="../public/images/woman-exploring.jpg" width="400px" alt="">
+    <canvas id="codes" width="300px">
+        Some Browser will not support this canvas
+    </canvas>
+   </div> 
+</body>
+</html>
